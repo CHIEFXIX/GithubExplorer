@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Explorer</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loadingBar"></div>
+  <div class="container">
+    <div class="navbar">
+      <h1 class="heading">GitHub Explorer</h1>
+      <div class="search-container">
+        <div class="search-input">
+          <input type="text" id="searchInput" placeholder="Enter GitHub username">
+          <button id="searchButton">Search</button>
+        </div>
+      </div>
+    </div>
+    <div class="content-container">
+      <div class="left-side">
+        <div class="user-details" id="userDetails"></div>
+      </div>
+      <div class="right-side">
+        <div class="repositories" id="repositories"></div>
+        <div class="pagination" id="paginationContainer">
+          <button id="previousButton">Previous</button>
+          <button id="nextButton">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
